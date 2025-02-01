@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
     if (req.method === "POST") {
         const { text } = req.body;
-        const aiResponse = await fetch("http://your-server-ip:5000/ask", {
+        const aiResponse = await fetch("http://localhost:5000/ask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text }),

@@ -44,7 +44,7 @@ export default function Home()
   return (
     <div>
       <h1>AI Voice Assistant</h1>
-      <button onClick={startListening}>Start Speaking</button>
+      <button onClick={startListening} className="btn">Start Speaking</button>
       <p>You said: {text}</p>
       <p>AI Response: {response}</p>
     </div>
