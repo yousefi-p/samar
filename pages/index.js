@@ -24,7 +24,7 @@ export default function Home()
 
   const fetchAIResponse = async (text) =>
   {
-    const res = await fetch("/api/ask", {
+    const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
@@ -42,7 +42,7 @@ export default function Home()
   };
 
   return (
-    <div>
+    <div className="flex-d">
       <h1>AI Voice Assistant</h1>
       <button onClick={startListening} className="btn">Start Speaking</button>
       <p>You said: {text}</p>
