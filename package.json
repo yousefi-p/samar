@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --ssl-key ~/certs/key.pem --ssl-cert ~/certs/cert.pem",
+    "dev": "next dev --turbopack --experimental-key ~/certs/key.pem --experimental-cert ~/certs/cert.pem",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
